@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthCheckController {
 
+    @GetMapping("/")
+    public String helloRoot() {
+        return "Webapp live!";
+    }
     @GetMapping("/api/live")
     public String checkHealth() {
         return "API is live and running!";
