@@ -14,7 +14,7 @@ public class HealthCheckController {
 
     @GetMapping("/")
     public String helloRoot() {
-        return "Webapp live! PIPELINE ACTIVE!";
+        return "Webapp live! CICD TEST 1";
     }
     @GetMapping("/api/live")
     public String checkHealth() {
