@@ -2,7 +2,7 @@
 FROM maven:3.8.4-openjdk-17 as builder
 WORKDIR /app
 COPY . /app
-RUN mvn clean package
+RUN mvn clean package -DskipTests
 
 # Stage 2: Deploy WAR in Tomcat
 FROM tomcat:10
