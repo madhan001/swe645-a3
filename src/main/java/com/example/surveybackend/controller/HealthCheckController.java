@@ -14,7 +14,7 @@ public class HealthCheckController {
 
     @GetMapping("/")
     public String helloRoot() {
-        return "Webapp live! CICD TEST 1";
+        return "Webapp live!";
     }
     @GetMapping("/api/live")
     public String checkHealth() {
